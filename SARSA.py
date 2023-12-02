@@ -62,7 +62,7 @@ class SARSAAgent:
                 if uno_game.discard_pile:
                     top_card = uno_game.discard_pile[-1]
 
-                if uno_game.current_player == 1:
+                if uno_game.current_player == 0:
                     next_action = self.choose_action(uno_game, top_card)
                 else:
                     valid_moves = [card for card in current_player.hand if

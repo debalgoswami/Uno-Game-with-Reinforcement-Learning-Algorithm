@@ -66,7 +66,7 @@ class MonteCarloRL:
                 if uno_game.discard_pile:
                     top_card = uno_game.discard_pile[-1]
                 
-                if uno_game.current_player == 1 :
+                if uno_game.current_player == 0 :
                     action = self.choose_action(uno_game, top_card) # Player 1 plays with MC algorithm
                 else :
                     valid_moves = [card for card in current_player.hand if uno_game.is_valid_move(current_player, card, top_card)]
