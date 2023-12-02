@@ -51,7 +51,7 @@ if __name__ == "__main__":
                 player_wins[uno_game.current_player] += 1
                 run_time = False
 
-    print("Wins after 5000 episodes:")
+    print("Wins after 10000 episodes:")
     print("Player 1 (Q-learning):", player_wins[0])
     print("Player 2 (SARSA):", player_wins[1])
     print("Player 3 (Monte Carlo):", player_wins[2])
