@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     player_wins = [0, 0, 0]
 
-    for episode in range(1, 5001):
+    for episode in range(1, 10001):
         uno_game.__init__(num_players)
         uno_game.deal_initial_cards()
         first_card = uno_game.start_card()
