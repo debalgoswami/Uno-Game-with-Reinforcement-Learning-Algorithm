@@ -74,8 +74,9 @@ class SARSAAgent:
                     if uno_game.deck:
                         current_player.hand.append(uno_game.deck.pop(random.randint(0, len(uno_game.deck) - 1)))
                     else:
-                        uno_game.discard_pile.pop(0)
-                        uno_game.deck = uno_game.discard_pile
+                        if uno_game.discard_pile:
+                            uno_game.discard_pile.pop(0)
+                            uno_game.deck = uno_game.discard_pile
 
                 initial_state = state.copy()
 
